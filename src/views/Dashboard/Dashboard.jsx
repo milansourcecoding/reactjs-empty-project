@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import { AuthContext } from "../../layout/AuthDataProvider";
+
 
 class Dashboard extends Component {
   static contextType = AuthContext;
@@ -8,7 +10,7 @@ class Dashboard extends Component {
     super(props);
 
     this.state = {
-      
+      title: 'DASHBOARD'
     }
   }
 
@@ -18,7 +20,7 @@ class Dashboard extends Component {
   
   render() {
     return <div className="dashboard-page">
-      DASHBOARD
+      {this.state.title}
     </div>;
   }
 }

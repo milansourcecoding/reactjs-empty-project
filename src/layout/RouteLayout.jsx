@@ -4,6 +4,7 @@ import { Navigate } from 'react-router-dom';
 import { AuthContext } from "../layout/AuthDataProvider";
 import PageLayout from './PageLayout.jsx';
 
+
 const RouteLayout = ({ component: Component, layout: Layout, ...rest }) => {
   const { authenticated } = useContext(AuthContext)
 

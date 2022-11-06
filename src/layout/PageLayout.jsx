@@ -2,6 +2,7 @@ import React from 'react';
 
 import { AuthContext } from "../layout/AuthDataProvider";
 
+
 const PageLayout = ({ children, ...rest }) => {
   const { clearStorage } = React.useContext(AuthContext);
   
