@@ -235,6 +235,7 @@ npm run storybook
 
 ```
 https://github.com/milansourcecoding/reactjs-empty-project.git
+https://github.com/milansourcecoding/laravel-empty-project.git
 ```
 
 ---

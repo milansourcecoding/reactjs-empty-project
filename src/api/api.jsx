@@ -4,7 +4,7 @@ const {
     REACT_APP_API_URL
 } = process.env;
 
-const PATH = 'todos/';
+const PATH = '';
 
 const api = {
 
@@ -58,8 +58,7 @@ const api = {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + token,
-                    'app-name': data.appName? data.appName: undefined
+                    'Authorization': 'Bearer ' + token
                 }
             })
             .catch( error => {
@@ -95,8 +94,7 @@ const api = {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + token,
-                    'app-name': data.appName? data.appName: undefined
+                    'Authorization': 'Bearer ' + token
                 }
             })
             .catch( error => {

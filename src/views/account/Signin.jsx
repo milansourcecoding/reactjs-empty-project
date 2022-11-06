@@ -49,31 +49,17 @@ export default function SignIn() {
     if (form.checkValidity() === true) {
       setIsLoading(true);
 
-      // setAuthenticated(true);
-      // setCurrentRole('Admin');
-      // setAccessToken('accessToken1');
-      // setRefreshToken('refreshToken1');
-      // setTokenType('Bearer');
-      // setToken('token1');
-      // setUser(JSON.stringify({
-      //   id: 1,
-      //   username: 'User1',
-      //   email: 'user1@gmail.com',
-      // }));
-
-      // history("/");
-      
       authApi.login(emailInput.current.value, pswInput.current.value)
         .then((result) => {
-          console.log('⚡ | result', result);
           if(result && result.data && result.data.data){
             setAuthenticated(true);
-            setToken(JSON.stringify(result.data.data.id));
-            setUser(JSON.stringify(result.data.data));
+            setToken(result.data.data.token);
+            setUser(JSON.stringify(result.data.data.user));
   
             history("/");
           } else {
             setError('Auth error');
+            setIsLoading(false);
           }
       });
     }

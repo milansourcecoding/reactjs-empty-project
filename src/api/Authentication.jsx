@@ -4,7 +4,7 @@ const {
     REACT_APP_API_URL
 } = process.env;
 
-const PATH = 'users';
+const PATH = 'auth/';
 
 
 const authApi = {
@@ -15,8 +15,8 @@ const authApi = {
 
         const URL = REACT_APP_API_URL + PATH;
 
-        const getResult = await axios.get( //Should be POST
-            URL + '/1',
+        const getResult = await axios.post(
+            URL + 'login',
             {
                 email: email,
                 password: password,
@@ -47,16 +47,18 @@ const authApi = {
         return { data: getResult, errorMessage: errorMessage, status: status};
     },
 
-    register: async (email) => {
+    register: async (name, email, password) => {
         let errorMessage = "";
         let status = 0;
 
         const URL = REACT_APP_API_URL + PATH;
 
         const getResult = await axios.post(
-            URL + '/register',
+            URL + 'register',
             {
-                email: email
+                name: name,
+                email: email,
+                password: password
             },
             {
                 headers: {
