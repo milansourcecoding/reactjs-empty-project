@@ -48,9 +48,9 @@
 
 ## Verzija
 
-- X.0.0 -> Novi projekat
-- 1.X.0 -> Build to prod (Spajanje iz develop u master)
-- 1.0.X -> hotfix
+- npm run version:major => X.0.0 -> Novi projekat
+- npm run version:minor => 1.X.0 -> Build to prod (Spajanje iz develop u master)
+- npm run version:patch => 1.0.X -> hotfix
 
 ---
 
