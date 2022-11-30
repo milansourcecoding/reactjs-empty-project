@@ -1,8 +1,11 @@
 ## Scrum
 
-- Project Owner - Klijent ili Osoba koja ima direktan kontakt sa klijentom
-- Team Leader - Osoba koja upravlja sa zadacima i resava probleme na koje tim nailazi prilikom razvoja
-- Scrum tim - Razvojni tim
+- Team Leader - Upravlja sa zadacima i resava probleme na koje tim nailazi prilikom razvoja
+- Project Manager - Upravlja projektom i ima direktan kontakt sa klijentima
+- Back-end Developer - Kreira API i dokumentaciju
+- Front-end Developer - Kreira stranice i povezuje API
+- UI/UX/QA Tester & Tehnical Support - Testiranje i podrska
+
 - Sprint - Vremenski period od ponedeljka do petaka
 - Dnevni Scrum - Svakodnevni kratki izvestaj o radu
 - Retrospektiva - Pregled sprinta i dogovaranje za sledeci sprint
@@ -59,9 +62,9 @@
 - Function names		- Camel Case (initFunction)
 - Variable names		- Camel Case (variableName)
 - CSS class name		- Hyphen Delimited Strings - BEM — Block Element Modifier (button-success-green)
-- ID of an element	- Underscore delimiter (element_id)
+- ID of an element		- Underscore delimiter (element_id)
 - Folder				- Camel Case (layout, pageName)
-- File				- Pascal Case (ComponentName)
+- File					- Pascal Case (ComponentName)
 
 ---
 
