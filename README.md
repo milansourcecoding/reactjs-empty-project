@@ -1,10 +1,14 @@
-## Scrum
+## Uloge
 
 - Team Leader - Upravlja sa zadacima i resava probleme na koje tim nailazi prilikom razvoja
 - Project Manager - Upravlja projektom i ima direktan kontakt sa klijentima
 - Back-end Developer - Kreira API i dokumentaciju
 - Front-end Developer - Kreira stranice i povezuje API
 - UI/UX/QA Tester & Tehnical Support - Testiranje i podrska
+
+---
+
+## Scrum
 
 - Sprint - Vremenski period od ponedeljka do petaka
 - Dnevni Scrum - Svakodnevni kratki izvestaj o radu
@@ -125,19 +129,6 @@ index.jsx
 ---
 
 ## Kreiranje projekta
-
-
-Instaliraj ESLint ekstenziju za nalazenje gresaka za VS Code  
-https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-
-Multi Layouts  
-http://www.uxshaper.com/different-layouts-with-react-router/
-
-Prosledjivanje globalnih podataka ostallim componentama (Autentifikacija korisnika)  
-https://www.taniarascia.com/using-context-api-in-react/
-
-<br />
-<br />
 
 Instaliraj NODE | NPM | GIT  
 ```
